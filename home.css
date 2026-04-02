@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav{
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav a{
+    text-decoration: none;
+    color: #555555;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.nav a button{
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container1{
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container1 .green{
+    margin: 100px 0 5px 0;
+    background-color: greenyellow;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: small;
+    padding: 2px 8px;
+}
+.container1 h1{
+    margin: 5px 0;
+    letter-spacing: -4px;
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+}
+.container1 button{
+    margin: 20px 0;
+    padding: 15px 25px;
+    background-color: #006000;
+    border: none;
+    border-radius: 25px;
+    font-weight: bolder;
+    color: greenyellow;
+}
+.container1 img{
+    width: 100%;
+}
+.container1 .detail{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+.container2{
+    height: 100%;
+    padding: 120px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container2 .imgcard{
+    background-color: rgb(2, 255, 2);
+    padding: 60px 60px 0 60px;
+    border: 4px solid white;
+    border-radius: 8px;
+}
+.container2 .imgcard img{
+    width: 380px;
+}
+.container2 .detailbox{
+    margin: 50px;
+}
+.container2 .detailbox p{
+    margin-bottom: 30px;
+}
+.container2 .detailbox .details{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.container2 .detailbox .details .btn{
+    border: 2px solid silver;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+.container2 .detailbox .details .detailh{
+    font-size: 25px;
+    font-weight: 900;
+}
+.container3{
+    padding: 120px;
+}
+.container3 button{
+    background-color: white;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 1px solid silver;
+    border-radius: 20px;
+}
+.container3 .imgcon{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.container3 .imgcon .imgbox{
+    flex-basis: calc(20%);
+}
+.container3 .imgcon .imgbox img{
+    height: 150px;
+    border-radius: 10px;
+}
+.container3 .imgcon .imgbox progress{
+    margin-top: 20px;
+}
+.container3 .topicon{
+    margin-top: 30px;
+}
+.container3 .topiconbox{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.container3 .topicon .topicbox{
+    background-color: rgb(250, 250, 250);
+    padding-bottom: 20px;
+}
+.container3 .topicon .topicbox1{
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    background: url("chris-hoy-tour-de-4_ride_-2025-event-header-1024x359-1-aspect-ratio-530-280.jpg");
+    background-position: 50%;
+    background-size: cover;
+}
+.container3 .topicon .topicbox2{
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    background: url("bec100912729_1773036543647921_r.png");
+    background-position: 50%;
+    background-size: cover;
+}
+.container3 .topicon .topicbox3{
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    background: url("Stocksy_txp14a275bcIDw300_Large_3663924-aspect-ratio-460-295.jpg");
+    background-position: 50%;
+    background-size: cover;
+}
+.container3 .topicon .topicbox p{
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 8px;
+}
+.container3 .topicon .topicbox p:hover{
+    background-color: rgb(255, 255, 255);
+}
+@media(max-width:800px){
+    .nav-left a img{
+        width: 20px;
+    }
+    .nav-left a span,
+    .nav-right a span{
+        display: none;
+    }
+    .container1 h1{
+        font-size: 50px;
+    }
+    .container1 .detail{
+        font-size: 20px;
+    }
+    .container2{
+        flex-direction: column;
+    }
+}
