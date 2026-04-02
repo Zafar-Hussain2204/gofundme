@@ -148,8 +148,11 @@ body{
     gap: 20px;
 }
 .container3 .topicon .topicbox{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     background-color: rgb(250, 250, 250);
     padding-bottom: 20px;
+    overflow: hidden;
 }
 .container3 .topicon .topicbox1{
     width: 250px;
@@ -179,6 +182,7 @@ body{
     margin-top: 20px;
     border-radius: 8px;
     padding: 8px;
+    cursor: pointer;
 }
 .container3 .topicon .topicbox p:hover{
     background-color: rgb(255, 255, 255);
